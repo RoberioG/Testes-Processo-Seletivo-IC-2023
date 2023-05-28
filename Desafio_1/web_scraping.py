@@ -3,15 +3,6 @@ from bs4 import BeautifulSoup
 import os
 import zipfile
 
-'''
-1. capturar o html do site
-2. filtrar a informação do que precisa ser baixado
-3. fazer o download do arquivos
-4. agrupar os arquivos em uma pasta
-5. zipar a pasta
-
-'''
-
 def zipAnexos():
     z = zipfile.ZipFile('anexos.zip', 'w')
 
