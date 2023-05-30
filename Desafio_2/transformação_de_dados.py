@@ -24,7 +24,7 @@ def zipTabela():
 
 
 def main():
-    listaTabelas = tabula.read_pdf("AnexoI-Listacompletadeprocedimentos.pdf", encoding='cp1252', pages=list(range(3, 181)))
+    listaTabelas = tabula.read_pdf("AnexoI-Listacompletadeprocedimentos.pdf", encoding='cp1252', lattice=True, pages=list(range(3, 181)))
     manipulaTabelas(listaTabelas)
     zipTabela()
 
